@@ -1,0 +1,46 @@
+{
+  "name": "@divyanshu013/media",
+  "version": "1.0.0",
+  "description": "Simplify media queries for CSS in JS",
+  "author": {
+    "name": "Divyanshu Maithani",
+    "email": "div.blackcat@gmail.com",
+    "url": "https://github.com/divyanshu013"
+  },
+  "main": "index.js",
+  "module": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c --watch",
+    "build": "rollup -c",
+    "precommit": "lint-staged",
+    "lint": "eslint",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.9.1",
+    "husky": "^0.14.3",
+    "jest": "^23.1.0",
+    "lint-staged": "^7.1.3",
+    "prettier": "^1.13.5",
+    "rollup": "^0.60.1",
+    "rollup-plugin-babel": "^3.0.7"
+  }
+}
