@@ -9,6 +9,7 @@
 </h1>
 <p align="center" style="font-size: 1.2rem;">Simplify media queries for CSS in JS</p>
 
+[![Build Status](https://travis-ci.org/divyanshu013/media.svg?branch=master)](https://travis-ci.org/divyanshu013/media)
 [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest)
 
 Media queries for CSS in JS

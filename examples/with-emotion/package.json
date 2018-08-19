@@ -2,6 +2,7 @@
   "name": "with-emotion",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://divyanshu013.github.io/media",
   "dependencies": {
     "@divyanshu013/media": "^0.0.2",
     "emotion": "^9.2.6",
@@ -13,7 +14,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   }
 }
