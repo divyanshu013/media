@@ -3,5 +3,7 @@ node_js:
   - stable
 install:
   - yarn install
+  - npm install -g codecov
 script:
   - yarn test
+  - codecov
