@@ -1,6 +1,6 @@
 {
   "name": "@divyanshu013/media",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Simplify media queries for CSS in JS",
   "private": false,
   "author": {

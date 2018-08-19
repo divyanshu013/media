@@ -11,10 +11,93 @@
 
 ![NpmVersion](https://img.shields.io/npm/v/@divyanshu013/media.svg)
 ![bundle size](https://img.shields.io/bundlephobia/minzip/@divyanshu013/media.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9aff1f460c5e257f0519/maintainability)](https://codeclimate.com/github/divyanshu013/media/maintainability)
+[![codecov](https://codecov.io/gh/divyanshu013/media/branch/master/graph/badge.svg)](https://codecov.io/gh/divyanshu013/media)
 [![Build Status](https://travis-ci.org/divyanshu013/media.svg?branch=master)](https://travis-ci.org/divyanshu013/media)
 [![jest](https://facebook.github.io/jest/img/jest-badge.svg)](https://github.com/facebook/jest)
 ![Downloads](https://img.shields.io/npm/dt/@divyanshu013/media.svg)
 
-Media queries for CSS in JS
+# Install
 
-`@divyanshu013/media`
+```bash
+yarn add @divyanshu013/media
+```
+
+# Usage
+
+## breakpoints
+
+```js
+import { breakpoints } from '@divyanshu013/media';
+
+// default breakpoints
+console.log(breakpoints);
+/*
+{
+  xsmall: 420,
+  small: 576,
+  medium: 768,
+  large: 992,
+  xlarge: 1200,
+}
+*/
+```
+
+## min-width query
+
+```js
+import { mediaMin } from '@divyanshu013/media';
+import { css } from 'react-emotion';
+
+const styles = css({
+  [mediaMin.medium]: {
+    fontSize: '1.2rem',
+  },
+});
+```
+
+## max-width query
+
+```js
+import { mediaMax } from '@divyanshu013/media';
+import { css } from 'react-emotion';
+
+const styles = css({
+  [mediaMax.medium]: {
+    fontSize: '0.9rem',
+  },
+});
+```
+
+## create
+
+```js
+import { create } from '@divyanshu013/media';
+
+const breakpoints = {
+  md: 768,
+  xxl: 1600,
+};
+
+const mediaQMax = create(breakpoints, 'max');
+const mediaQMin = create(breakpoints, 'min');
+```
+
+## compose
+
+Just like `Object.assign`. (Actually its just Object.assign 😛).
+
+```js
+const media1 = {...};
+const media2 = {...};
+
+const mediaQ = compose(media1, media2);
+
+// now use mediaQ
+```
+
+# Inspiration
+
+This library is inspired by [emotion](https://github.com/emotion-js/emotion) and [facepaint](https://github.com/emotion-js/facepaint).
+
+Logo from [EmojiOne](https://www.emojione.com/emoji/1f483).
