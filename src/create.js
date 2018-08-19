@@ -1,5 +1,5 @@
 const create = (breakpoints, type) =>
-  Object.values(breakpoints).reduce(
+  Object.entries(breakpoints).reduce(
     (mediaObject, [breakpoint, value]) => ({
       ...mediaObject,
       [breakpoint]: `@media (${type}-width: ${value}px)`,

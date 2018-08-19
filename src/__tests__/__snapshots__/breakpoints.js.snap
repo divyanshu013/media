@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`breakpoints snapshot 1`] = `
+Object {
+  "large": 992,
+  "medium": 768,
+  "small": 576,
+  "xlarge": 1200,
+  "xsmall": 420,
+}
+`;

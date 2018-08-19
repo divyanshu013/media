@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot create max query 1`] = `
+Object {
+  "large": "@media (max-width: 992px)",
+  "medium": "@media (max-width: 768px)",
+  "small": "@media (max-width: 576px)",
+  "xlarge": "@media (max-width: 1200px)",
+  "xsmall": "@media (max-width: 420px)",
+}
+`;
+
+exports[`snapshot create min query 1`] = `
+Object {
+  "large": "@media (min-width: 992px)",
+  "medium": "@media (min-width: 768px)",
+  "small": "@media (min-width: 576px)",
+  "xlarge": "@media (min-width: 1200px)",
+  "xsmall": "@media (min-width: 420px)",
+}
+`;
