@@ -1,4 +1,4 @@
 [build]
   base="examples/with-emotion"
-  publish="examples/with-emotion/build"
+  publish="build"
   command="build"
